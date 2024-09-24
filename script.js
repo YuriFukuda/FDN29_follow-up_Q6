@@ -9,5 +9,12 @@ function changeColor(){
   document.body.style.backgroundColor = colors[bodyColor];
   console.log('Button clicked!'); // feel free to change/delete this line
 }
-
 document.getElementById('color-button').addEventListener('click', changeColor)
+
+const button = document.getElementById('color-button');
+
+button.addEventListener('mouseover', () => {
+  button.classList.add('hover');
+
+});
+
